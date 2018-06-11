@@ -1,0 +1,8 @@
+<div class="CalciView">
+    <display-directive display-name={{dispValue}}></display-directive>
+    <div ng-repeat="item in elementArray" class="buttonPanel">
+        <number-directive ng-if="item.type === 'NUMBER'" value={{item.dataValue}}></number-directive>
+        <operator-directive ng-if="item.type === 'OPERATOR'" value={{item.dataValue}}></operator-directive>
+    </div>
+
+</div>
